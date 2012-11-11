@@ -1,0 +1,34 @@
+{
+	"name" : "cowsay",
+	"version" : "1.0.0",
+	"description" : "cowsay is a configurable talking cow",
+	"keywords" : ["cow", "cowsay", "cowthink", "figlet", "talking", "ASCII"],
+	"homepage" : "https://github.com/piuccio/cowsay",
+	"author" : {
+		"name" : "Fabio Crisci",
+		"email" : "piuccio@gmail.com",
+		"url" : "https://github.com/piuccio/"
+	},
+	"main" : "./index",
+	"bin" : {
+		"cowsay" : "./cli.js",
+		"cowthink" : "./cli.js"
+	},
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/piuccio/cowsay.git"
+	},
+	"scripts" : {
+		"test" : "node test.js"
+	},
+	"dependencies" : {
+		"optimist" : "~0.3.5"
+	},
+	"devDependencies" : {
+		"nodeunit" : "~0.7.4"
+	},
+	"engines" : {
+		"node" : ">=0.6.17"
+	},
+	"preferGlobal" : true
+}
