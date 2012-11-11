@@ -27,7 +27,7 @@ or
 
     cowthink node.js is cool
 
-It acts in the same way as the original cowsay, so consul `cowsay(1)` or run `cowsay -h`
+It acts in the same way as the original cowsay, so consult `cowsay(1)` or run `cowsay -h`
 
 ````
  ________
