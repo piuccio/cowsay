@@ -1,6 +1,6 @@
 {
   "name": "cowsay",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "cowsay is a configurable talking cow",
   "keywords": [
     "cow",
