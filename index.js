@@ -11,7 +11,7 @@ exports.think = function (options) {
 };
 
 function doIt (options, sayAloud) {
-	var cow = cows.get(options.f);
+	var cow = cows.get(options.f || "default");
 	var face = faces(options);
 	face.thoughts = sayAloud ? "\\" : "o";
 
