@@ -54,5 +54,8 @@ function say () {
 }
 
 function listCows () {
-	require("./index").list();
+	require("./index").list(function(err, list) {
+	if (err) throw new Error(err);
+	console.log(list.join("  "));
+  });
 }
