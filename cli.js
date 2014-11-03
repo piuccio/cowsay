@@ -54,5 +54,5 @@ function say () {
 }
 
 function listCows () {
-	require("./lib/cows").list();
+	require("./index").list();
 }
