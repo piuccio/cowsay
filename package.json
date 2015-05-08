@@ -29,6 +29,7 @@
     "test": "node test.js"
   },
   "dependencies": {
+    "get-stdin": "^4.0.1",
     "optimist": "~0.3.5"
   },
   "devDependencies": {

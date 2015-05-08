@@ -39,10 +39,19 @@ var argv = require("optimist")
 
 if (argv.l) {
 	listCows();
-} else if (argv.h || argv._.length === 0) {
-	require("optimist").showHelp();
-} else {
+} else if (argv.h) {
+	showHelp();
+} else if (argv._.length) {
 	say();
+} else {
+	require("get-stdin")(function (data) {
+		if (data) {
+			argv._ = [data];
+			say();
+		} else {
+			showHelp();
+		}
+	});
 }
 
 function say () {
@@ -55,4 +64,8 @@ function say () {
 
 function listCows () {
 	require("./lib/cows").list();
+}
+
+function showHelp () {
+	require("optimist").showHelp();
 }
