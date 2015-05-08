@@ -70,3 +70,7 @@ cowsay can be used as any other npm dependency
              U  ||----w |
                 ||     ||
 ````
+
+## Pipe from standard input
+
+    echo please repeat | cowsay
