@@ -10,6 +10,8 @@ exports.think = function (options) {
 	return doIt(options, false);
 };
 
+exports.list = cows.list;
+
 function doIt (options, sayAloud) {
 	var cow = cows.get(options.f || "default");
 	var face = faces(options);
