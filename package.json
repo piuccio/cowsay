@@ -33,7 +33,7 @@
     "optimist": "~0.3.5"
   },
   "devDependencies": {
-    "nodeunit": "~0.7.4"
+    "nodeunit": "~0.9.1"
   },
   "preferGlobal": true
 }
