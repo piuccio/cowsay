@@ -21,6 +21,12 @@
     "cowsay": "./cli.js",
     "cowthink": "./cli.js"
   },
+  "files": [
+    "index.js",
+    "cli.js",
+    "cows/",
+    "lib/"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/piuccio/cowsay.git"
