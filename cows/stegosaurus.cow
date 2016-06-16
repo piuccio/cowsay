@@ -2,10 +2,10 @@
 ## A stegosaur with a top hat?
 ##
 $the_cow = <<EOC;
-$thoughts                             .       .
- $thoughts                           / `.   .' " 
-  $thoughts                  .---.  <    > <    >  .---.
-   $thoughts                 |    \\  \\ - ~ ~ - /  /    |
+  $thoughts                           .       .
+   $thoughts                         / `.   .' " 
+    $thoughts                .---.  <    > <    >  .---.
+     $thoughts               |    \\  \\ - ~ ~ - /  /    |
          _____          ..-~             ~-..-~
         |     |   \\~~~\\.'                    `./~~~/
        ---------   \\__/                        \\__/
