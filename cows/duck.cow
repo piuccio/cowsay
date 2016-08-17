@@ -1,0 +1,7 @@
+# provided by Alex Myczko <alex@aiei.ch>
+$the_cow = <<"EOC";
+ $thoughts
+  $thoughts
+   $thoughts >()_
+      (__)__ _
+EOC
