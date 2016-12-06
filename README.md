@@ -11,7 +11,7 @@
                 ||     ||
 ````
 
-cowsay is a configurable talking cow, originally written in Perl by [Tony Monroe](http://www.nog.net/~tony/).
+cowsay is a configurable talking cow, originally written in Perl by [Tony Monroe](https://github.com/tnalpgge/rank-amateur-cowsay)
 
 This project is a translation in JavaScript of the original program and an attempt to bring the same silliness to node.js.
 
