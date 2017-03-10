@@ -36,7 +36,8 @@
   },
   "dependencies": {
     "get-stdin": "^4.0.1",
-    "optimist": "~0.6.1"
+    "optimist": "~0.6.1",
+    "string-width": "~2.0.0"
   },
   "devDependencies": {
     "nodeunit": "~0.9.1"
