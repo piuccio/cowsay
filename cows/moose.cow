@@ -4,6 +4,6 @@ $the_cow = <<EOC;
     $thoughts      \\__/
            ($eyes)\\_______
            (__)\\       )\\/\\
-            $tongue ||----w |
+            $tongue ||----- |
                ||     ||
 EOC
