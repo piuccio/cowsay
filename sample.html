@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cowsay</title>
+    <script src="build/cowsay.umd.js"></script>
+  </head>
+  <body>
+    <pre id="output"></pre>
+    <script>
+      const output = document.getElementById('output');
+      output.textContent = cowsay.say({
+        text: 'grazing in the browser',
+        cow: cowsay.DRAGON,
+      });
+    </script>
+  </body>
+</html>

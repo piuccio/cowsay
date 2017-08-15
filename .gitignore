@@ -2,3 +2,4 @@ node_modules
 .*
 !.gitignore
 !.travis.yml
+build

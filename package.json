@@ -16,7 +16,10 @@
     "email": "piuccio@gmail.com",
     "url": "https://github.com/piuccio/"
   },
+  "license": "MIT",
   "main": "./index",
+  "module": "./build/cowsay.es.js",
+  "browser": "./build/cowsay.umd.js",
   "bin": {
     "cowsay": "./cli.js",
     "cowthink": "./cli.js"
@@ -24,6 +27,7 @@
   "files": [
     "index.js",
     "cli.js",
+    "build/",
     "cows/",
     "lib/"
   ],
@@ -32,6 +36,7 @@
     "url": "https://github.com/piuccio/cowsay.git"
   },
   "scripts": {
+    "prepublish": "rollup -c",
     "test": "node test.js"
   },
   "dependencies": {
@@ -39,7 +44,11 @@
     "optimist": "~0.6.1"
   },
   "devDependencies": {
-    "nodeunit": "~0.9.1"
+    "nodeunit": "~0.11.1",
+    "rollup": "^0.47.4",
+    "rollup-plugin-commonjs": "^8.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-string": "^2.0.2"
   },
   "preferGlobal": true
 }
