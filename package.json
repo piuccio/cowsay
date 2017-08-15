@@ -50,5 +50,8 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-string": "^2.0.2"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "engines": {
+    "node": ">= 4"
+  }
 }
