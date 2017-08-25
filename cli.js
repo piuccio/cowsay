@@ -44,7 +44,7 @@ if (argv.l) {
 } else if (argv._.length) {
 	say();
 } else {
-	require("get-stdin")(function (data) {
+	require("get-stdin")().then(function (data) {
 		if (data) {
 			argv._ = [data];
 			say();
