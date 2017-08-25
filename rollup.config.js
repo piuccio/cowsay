@@ -3,7 +3,7 @@ import nodeResolve from 'rollup-plugin-node-resolve';
 import string from 'rollup-plugin-string';
 
 export default {
-  entry: 'browser.js',
+  input: 'browser.js',
   plugins: [
     nodeResolve({
       module: true,
@@ -14,9 +14,9 @@ export default {
       include: '**/*.cow',
     }),
   ],
-  moduleName: 'cowsay',
-  targets: [
-    { dest: 'build/cowsay.umd.js', format: 'umd' },
-    { dest: 'build/cowsay.es.js', format: 'es' },
+  name: 'cowsay',
+  output: [
+    { file: 'build/cowsay.umd.js', format: 'umd' },
+    { file: 'build/cowsay.es.js', format: 'es' },
   ]
 }
