@@ -32,9 +32,10 @@ var argv = require("optimist")
 	"n" : "If it is specified, the given message will not be word-wrapped.",
 	"W" : "Specifies roughly where the message should be wrapped. The default is equivalent to -W 40 i.e. wrap words at or before the 40th column.",
 	"f" : "Specifies a cow picture file (''cowfile'') to use. It can be either a path to a cow file or the name of one of cows included in the package.",
+	"r" : "Select a random cow",
 	"l" : "List all cowfiles included in this package."
 })
-.boolean(["b", "d", "g", "p", "s", "t", "w", "y", "n", "h", "l"])
+.boolean(["b", "d", "g", "p", "s", "t", "w", "y", "n", "h", "r", "l"])
 .argv;
 
 if (argv.l) {
