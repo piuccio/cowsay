@@ -46,7 +46,7 @@ if (argv.l) {
 } else {
 	require("get-stdin")().then(function (data) {
 		if (data) {
-			argv._ = [data];
+			argv._ = [require("strip-eof")(data)];
 			say();
 		} else {
 			showHelp();
