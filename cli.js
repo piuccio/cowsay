@@ -65,9 +65,9 @@ function say () {
 
 function listCows () {
 	require("./index").list(function(err, list) {
-	if (err) throw new Error(err);
-	console.log(list.join("  "));
-  });
+		if (err) throw new Error(err);
+		console.log(list.join("  "));
+	});
 }
 
 function showHelp () {

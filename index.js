@@ -13,16 +13,16 @@ exports.think = function (options) {
 exports.list = cows.list;
 
 function doIt (options, sayAloud) {
-  var cowFile;
+	var cowFile;
 
 	if (options.r) {
 		var cowsList = cows.listSync();
 		cowFile = cowsList[Math.floor(Math.random() * cowsList.length)];
-  } else {
-    cowFile = options.f || "default";
-  }
+	} else {
+		cowFile = options.f || "default";
+	}
 
-  var cow = cows.get(cowFile);
+	var cow = cows.get(cowFile);
 	var face = faces(options);
 	face.thoughts = sayAloud ? "\\" : "o";
 
