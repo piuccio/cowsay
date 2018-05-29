@@ -40,7 +40,6 @@ export { default as SATANIC } from './cows/satanic.cow';
 export { default as SHEEP } from './cows/sheep.cow';
 export { default as SKELETON } from './cows/skeleton.cow';
 export { default as SMALL } from './cows/small.cow';
-export { default as SODOMIZED } from './cows/sodomized.cow';
 export { default as SQUIRREL } from './cows/squirrel.cow';
 export { default as STEGOSAURUS } from './cows/stegosaurus.cow';
 export { default as STIMPY } from './cows/stimpy.cow';
