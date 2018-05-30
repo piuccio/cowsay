@@ -21,7 +21,6 @@ export { default as EYES } from './cows/eyes.cow';
 export { default as FLAMING_SHEEP } from './cows/flaming-sheep.cow';
 export { default as GHOSTBUSTERS } from './cows/ghostbusters.cow';
 export { default as GOAT } from './cows/goat.cow';
-export { default as HEAD_IN } from './cows/head-in.cow';
 export { default as HEDGEHOG } from './cows/hedgehog.cow';
 export { default as HELLOKITTY } from './cows/hellokitty.cow';
 export { default as KISS } from './cows/kiss.cow';
