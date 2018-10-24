@@ -1,13 +1,19 @@
-#
-#	CodeGoat.io: https://github.com/danyshaanan/goatsay
-#
+##
+## ejm97 http://www.ascii-art.de/ascii/ghi/goat.txt
+##
+$eye = chop($eyes);
 $the_cow = <<EOC;
+       $thoughts
         $thoughts
-         $thoughts
-          )__(
-         '|$eyes|'________/
-          |__|         |
-           $tongue||"""""""||
-             ||       ||
-
+         $thoughts  _))
+           > $eye\\     _~
+           `;'\\\\__-' \\_
+              | )  _ \\ \\
+             / / ``   w w
+            w w
 EOC
+
+
+
+
+

@@ -1,0 +1,45 @@
+# Snowball
+# by Charlie M
+
+$x = "\e[m  ";          #reset color
+$b = "\e[48;5;235m  ";  #fake black
+$v = "\e[48;5;14m  ";   #visor color
+$d = "\e[48;5;17m  ";   #dark blue (visor color)
+$s = "\e[48;5;145m  ";  #face color
+$w = "\e[107m  ";       #white
+$l = "\e[48;5;6m  ";    #glasses outline
+$h = "\e[44m  ";        #helmet blue
+$t = "$thoughts ";
+
+$the_cow = <<EOC;
+      $t
+       $t   $b$v  $b$x
+        $t  $b$v$b$v  $b$x    $b$s$b$x
+              $b$v$b$v$d        $v$b$x
+      $b  $x  $d        $h    $d            $x
+    $b$s  $b$x$d$h                        $d$x
+      $b$s$v$d  $h            $d          $d$x
+        $b$d  $h        $d      $v        $b$w$l$b$x
+        $b$h  $h    $d      $v        $b$w$v$d  $l$b$x
+      $b$h        $d    $w$d$v$b$w$v  $b  $l    $v$l$b$x
+      $b$h  $b    $d$l  $d$v  $b  $v$l    $b$w$l    $b$x
+      $b$h  $b$s$d  $l$v          $l  $w  $b$w  $b$x
+      $b      $s$d  $l$v    $l    $w    $b$w$b$w  $b$x
+        $b$w$b    $l        $w                    $b$x
+      $b$w                                      $b$x
+      $b$w$b$w    $b  $w                      $b$x
+            $b$w  $b      $w          $b      $x
+              $b$w$b$d  $b            $d  $b$x
+                $b    $d                $b$x
+    $b$x      $b$w    $b                $w  $b$x
+  $b$w$b$x  $b$w                      $b$w$w$b$x
+  $b$w$b$x$b$w                      $b$v$b$w$b$x
+  $b$w$b$w  $b$w  $b$w      $b$w      $b$w$b$x
+    $b$w      $b$w$b$w                    $b$x
+    $b$w          $b$w      $b$w        $b$x
+      $b$w    $b$w$b$w      $b$w    $b$w$b$x
+      $b$w    $b$w  $b$w  $b$w    $b      $x
+        $b$w    $b$x$b$w  $b        $w  $b$x
+        $b$w    $b$x$b$w    $b$w  $b$w    $b$x
+
+EOC

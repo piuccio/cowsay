@@ -1,0 +1,45 @@
+# Linda
+# by Charlie M
+
+$x = "\e[m  ";         #reset color
+$b = "\e[48;5;236m  "; #fake black
+$r = "\e[48;5;9m  ";   #red
+$d = "\e[48;5;1m  ";   #dark red
+$s = "\e[48;5;223m  "; #skin color
+$w = "\e[107m  ";      #white
+$j = "\e[44m  ";       #blue jeans
+$y = "\e[48;5;11m  ";  #yellow
+$t = "$thoughts ";
+
+$the_cow = <<EOC;
+      $t
+       $t     $b            $x
+        $t  $b                $x
+          $b          $s$b    $x
+          $b        $s    $b  $x
+        $b        $s        $b$x
+        $b  $r        $s$r        $x
+        $b  $r$b$w$b$w$r$w$b$w$x$r$x
+        $b  $r$b$s$w$r$s$r$w$s$x$r$x
+        $b    $r    $s    $r    $x
+          $b    $s  $b$s    $x
+            $b  $s    $b  $x
+        $b$x$b    $s      $x$b$x
+          $b      $s    $b  $x
+            $b  $r      $b$x
+              $r          $x
+            $r            $x
+            $r$x$r    $s$r$x  $s$x
+            $r      $s$r$d  $s$x
+              $d    $r    $d$x
+              $r          $x
+              $j$w        $x
+              $j$w        $x
+              $j$w          $x
+              $j$w          $x
+              $j  $w  $j$x
+                $j$x  $j$x
+                $j$x  $j$x
+                $s$x  $s$x
+              $y  $x  $y  $x
+EOC

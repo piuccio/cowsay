@@ -1,0 +1,30 @@
+# Floating Head (Rick & Morty)
+# by unknown 4channer
+
+$c1 = "\e[47m\e[30m";
+$wht = "\e[47m";
+$end = "\e[m";
+$the_cow = <<EOC;
+     $thoughts
+      $thoughts
+              _____
+          . $c1-^     `--$end,
+         $c1/# ===========`-_$end
+        $c1/# (--====_____====\\$end
+       $c1/#   .- --.    . --.|$end
+      $c1/##   |$wht  * )$c1   ($wht   * $c1),$end
+      $c1|##   \\$wht    $c1/  \\ \\$wht   $c1/ |$end
+      $c1|###   ---     \\ ---  |$end
+      $c1|####        ___)    #|$end
+      $c1|######            ##|$end
+       $c1\\##### ( -------- ) /$end
+        $c1\\####             /$end
+        `$c1\\###            |$end
+          $c1\\###           |$end
+           $c1\\##          |$end
+            $c1\\###.      .)$end
+              $c1`========/$end
+
+
+
+EOC

@@ -1,0 +1,52 @@
+# Zoidberg
+# by Charlie M
+
+$b = "\e[48;5;236m  ";  #fake black
+$r = "\e[48;5;9m  ";  #red
+$w = "\e[107m  ";       #white
+$x = "\e[m  ";          #reset color
+$l = "\e[48;5;75m  ";   #light blue
+$t = "$thoughts ";
+
+$the_cow = <<EOC;
+
+                $t                                                                                                    $b$r      $b  $x
+                    $t                                                                                                  $b$r        $b  $x
+                        $t                                                                                              $b  $r          $b$x
+                           $t                                                                                             $b$r            $b$x
+                              $t                                                                                          $b$r            $b$x
+                                 $t                                                                                         $b$r            $b$x
+                                   $t                                                                                         $b$r          $b$x
+                                     $t                                                                     $b    $x          $b$r            $b$x
+                                       $t                                                                   $b$r$b$x          $b$r            $b$x
+                                         $t                                                                 $b$r  $b  $x      $b$r            $b$x
+                                           $t                         $b            $x                      $b$r    $b    $x  $b$r            $b$x
+                                             $t                     $b$r            $b$x                    $b$r          $b    $r            $b$x
+                                               $t               $b$r                  $b$x                    $b$r          $b$r              $b$x
+                                                 $t           $b$r                      $b$x                  $b$r                          $b$x
+                                                            $b$r                          $b$x                  $b$r                        $b$x
+                                                            $b$r                        $b    $b$x                $b  $r                  $b$w  $b$x
+                                                          $b$r                        $b$w    $b$x                    $b  $r        $b    $w    $b$x
+          $b    $x                                        $b$r                      $b$w  $b$w  $b$x                  $b$w$b        $w          $b$x
+          $b$r$b$x                                        $b$r          $b      $r  $b$w        $b$x                  $b$w                      $b$x
+        $b$r  $b$x                                        $b$r      $b  $w      $b$r$b$w        $b$x                  $b$w                      $b$x
+      $b$r    $b$x                                        $b  $r    $b$w  $b$w  $b$r  $b$w      $b$x                    $b$w                      $b$x
+      $b$r      $b$x        $b    $x                        $b$r    $b$w        $b$r  $b        $r$b$x                  $b$w                      $b$x
+      $b$r      $b$x        $b$r$b$x                        $b  $r  $b$w        $b$r          $b$r  $b$x                $b$w                      $b$x
+    $b$r          $b$x      $b$r  $b$x                        $b$r  $b$w      $b  $r            $b$r$b$x                $b$w                      $b$x
+    $b$r          $b$x      $b$r    $b$x                        $b$r  $b      $r$b$r              $b        $x          $b$w                      $b$x
+    $b$r            $b$x    $b$r    $b$x                          $b$r          $b$r                      $b$x          $b$w                      $b$x
+    $b$r            $b$x  $b$r        $b$x                          $b$r        $b$r            $b    $r  $b$x          $b$b    $w                $b$x
+    $b$r              $b$x$b$r        $b$x                          $b$r        $b$r      $b$r        $b    $x          $b$w                      $b$x
+      $b$r              $b  $r        $b$x                            $b$r      $b$r  $b$r  $b$r        $b$x        $b$w                          $b$x
+      $b$r                $b$r        $b$x                              $b$r    $b$r  $b$r    $b    $r$b$x        $b$w                            $b$x
+        $b$r                          $b$x                              $b$r    $b$r    $b$r    $b$r$b$r$b$w      $b$w                            $b$x
+          $b$r                      $b$w$b$x                            $b$r      $b$r    $b    $r        $b$w      $b$w                        $b$x
+              $b$r                $b$w  $b$x                              $b$r      $b$r$b$r              $b$w      $b$w                        $b$x
+                  $b$r        $b  $w      $b$x                            $b$r        $b$r              $b$w          $b$w                    $b$x
+                $b$w$b        $w            $b$x                      $b$w  $b$r                      $b  $w          $b$w                  $b$x
+                $b$w                          $b$x                $b$w      $b$r                $b    $l$b$w            $b$w                $b$x
+                  $b$w                        $b$x              $b$w          $b                  $l    $b$w            $b$w              $b$x
+                    $b$w                        $b        $w    $b$w            $b$l              $b$l$b$w                $b$w          $b$x
+                    $b$w                          $b  $w          $b$w            $b$l$b$l      $b  $l$b$w                  $b$w      $b$x
+EOC

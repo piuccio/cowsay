@@ -1,0 +1,21 @@
+#
+#	Cat picture by Joan Stark
+#	Transformed into cowfile by Myroslav Golub
+#
+$eye = chop($eyes);
+$the_cow = <<EOC;
+       $thoughts  
+        $thoughts
+         $thoughts
+          $thoughts
+          |\\___/|
+         =) ${eye}Y${eye} (=            
+          \\  ^  /
+           )=*=(       
+          /     \\
+          |     |
+         /| | | |\\
+         \\| | |_|/\\
+         //_// ___/
+             \\_) 
+EOC

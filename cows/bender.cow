@@ -1,0 +1,51 @@
+# Bender
+# by Charlie M
+
+$g = "\e[48;5;145m  ";  #plain gray
+$d = "\e[48;5;240m  ";  #darker gray
+$b = "\e[48;5;235m  ";  #fake black
+$s = "\e[48;5;236m  ";  #smoke
+$w = "\e[107m  ";       #white
+$x = "\e[m  ";          #reset color
+$c = "\e[48;5;95m  ";   #cigar
+$o = "\e[48;5;202m  ";  #orange
+$t = "$thoughts ";
+
+$the_cow = <<EOC;
+                         $t     $b  $x
+                          $t  $b$g  $b$x
+                           $t   $b$d$x
+                                $d$g$x
+                                $d$b$x
+                            $b        $x
+                          $b$g  $b  $g$b$x
+                        $b$g            $b$x
+                      $b$g                $b$x
+                    $b                $g  $b$x
+                  $b$g                $b$d$b$x
+                  $b              $g  $b$d$b$x
+                $b  $w  $b$w$b$w  $b$g$b$d$b$x
+  $s$x$s$x      $b  $w$b$w$b$w$b$w$b$g$b$d$b$x
+                $b  $w    $b$w    $b$g$b$d$b$x
+      $s$x        $b                  $g$d$b$x
+        $s  $x        $b$g              $d$b$x
+          $s  $x      $b              $g$d$b$x
+              $o  $c      $b$w$b$w$b$w$b$d$b$x
+              $o  $c      $b$w$b$w$b$w$b$d$b$x
+                      $b              $d  $b$x
+                        $b$g            $b$g$b$x
+                      $b$g$b            $g    $b$x
+                    $b$g                        $b$x
+                  $b    $g                    $b    $x
+                  $b$g  $b                    $g$b$g$b$x
+                $b  $g                                $b$x
+              $b$g$b$g  $b                      $g    $b  $x
+              $b$g$b$g$b$g                  $d$b$g    $b    $x
+            $b$g  $b$g$b$g                  $d$b$g  $b  $g  $b$x
+            $b  $g$b$g$b$g                $d  $b$g  $b  $g$b  $x
+          $b$g    $b$g$b    $g            $d  $b$g  $d$b$g$b$d$b$x
+          $b  $g$b  $g$b$w$b$g            $d  $b$g  $d  $b$g$d$b$x
+        $b$g  $b$x$b$g$b    $g            $d  $b$g  $d$b$x$b$g$b$x
+        $b$g  $b$x$b$g$b$g                $d$b$g    $b$x  $b      $x
+        $b      $x$b$g$b$g                $d$b$g    $b$x  $b$g$d$b$x
+EOC

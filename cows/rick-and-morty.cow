@@ -1,0 +1,52 @@
+# Rick and Morty
+# by Charlie M
+
+$t = "$thoughts ";
+$x = "\e[m  ";          #reset color
+$b = "\e[48;5;235m  ";  #fake black
+$h = "\e[48;5;14m  ";   #hair color
+$m = "\e[48;5;130m  ";  #hair color
+$s = "\e[48;5;145m  ";  #face color
+$k = "\e[48;5;223m  ";  #skin color
+$p = "\e[48;5;94m  ";   #pants color
+$q = "\e[48;5;95m  ";   #pants color 2
+$d = "\e[48;5;238m  ";  #dark gray
+$w = "\e[107m  ";       #white
+$g = "\e[48;5;251m  ";  #light gray
+$z = "\e[48;5;6m  ";    #eyebrow
+$r = "\e[48;5;124m  ";  #mouth
+$j = "\e[44m  ";        #blue jeans
+$y = "\e[48;5;11m  ";   #yellow
+
+$the_cow = <<EOC;
+     $t
+      $t      $h$x  $h$x
+       $t   $h    $x$h  $x
+            $h          $x
+      $h      $s      $h    $x
+        $h  $s          $h$x
+          $h$s$z        $x
+        $h  $s$w  $s$w  $h$x
+      $h    $s$w$b$s$w$b$h  $x            $m          $x
+        $h$s            $h$x            $m            $x
+          $h$s          $x              $k          $m  $x
+        $h  $s  $r    $s$x            $k            $m  $x
+              $s      $x             $w   $k  $w  $k  $m$x
+                $s  $x               $b$w $k  $b$w  $k$m$x
+             $w$z    $w$x            $w   $b$k$w    $k  $x
+           $w  $z    $w$g$x           $k              $x
+         $w$x$w$z    $w$x$g$x         $k              $x
+         $w$x$w$z    $w$x$g$x           $k  $b  $k  $x
+         $w$x$w$z    $w$x$g$x             $k      $x
+         $w$x$w$z    $w$x$g$x           $y          $x
+         $w$x$w$b$y$b$w$x$g$x           $y          $x
+         $w$x$w$p    $w$x$g$x           $k$y      $k$x
+         $h$x$w$p$g$q$w$x$z$x           $k$y      $k$x
+         $s$x$w$p$g$q$w$x$s$x           $k$y      $k$x
+             $w$p$g$q$w$x               $k$j      $k$x
+             $w$p$g$q$w$x               $k$j$x  $j$k$x
+               $p$x$q$x                   $j$x  $j$x
+               $p$x$q$x                   $j$x  $j$x
+               $w$x$g$x                   $g$x  $g$x
+               $d  $b  $x               $g  $x$g  $x
+EOC

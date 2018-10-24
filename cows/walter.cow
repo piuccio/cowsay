@@ -1,0 +1,50 @@
+# Heisenberg (Walter White)
+# by Charlie M
+
+$t = "$thoughts ";
+$x = "\e[m  ";          #reset color
+$b = "\e[48;5;235m  ";  #black
+$k = "\e[48;5;236m  ";  #light black
+$s = "\e[48;5;223m  ";  #skin color
+$q = "\e[48;5;223m  ";  #skin color 2
+$l = "\e[48;5;75m  ";   #light blue
+$g = "\e[48;5;145m  ";  #belt buckle color
+$o = "\e[48;5;216m  ";  #skin color 3
+$r = "\e[48;5;215m  ";  #nose color
+$n = "\e[48;5;95m  ";   #beard color
+$p = "\e[48;5;53m  ";   #purple
+$u = "\e[48;5;93m  ";   #light purple
+
+$the_cow = <<EOC;
+        $t
+         $t         $b                $x
+          $t      $b                    $x
+                  $k                    $x
+            $b                              $x
+              $b                          $x
+                  $o$q$s                $x
+                $o$b                    $x
+              $o$q$o  $b            $b  $x
+              $o$q$o$s$b        $s$r$b  $x
+              $o$q  $s            $r$s$x
+                $o$s          $r    $s$x
+                  $o$q$s    $n    $s  $x
+                  $o$q$s  $n$q    $n$x
+                  $o$q$s  $n$s$n$s$n$x
+                $b  $o$q$s$n        $x
+              $b$k$b$p$q    $n    $x
+            $b  $k$b$p  $q  $p$b$x
+          $b$k  $b  $p  $l$p  $b  $x
+        $b$k      $b$p$u$p  $u$b  $x
+        $b$k  $b$k$b$u  $p$u  $b$k$b$x
+      $b$k    $b$k$b$u  $p$u  $b$k$b$x
+      $b$k  $b$k  $b$u  $p$u  $b$k$b$x
+      $b$k  $b$k  $b$u  $p$u  $b$k$b$x
+      $b$k  $b$k  $b$u  $p$u  $b$k$b$x
+      $b      $k  $b$k  $g$k  $b    $x
+      $o$s    $r$k$b$n  $b$n$b$b$s$o$x
+      $o$s    $r$b  $n  $b$n$b$b$s$o$x
+        $o$s$r$x$b$n    $b$n$b$o  $x
+          $o$r$x$b$n    $b$n$b$x
+                $b$n    $b$n$b$x
+EOC

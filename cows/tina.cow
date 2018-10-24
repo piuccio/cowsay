@@ -1,0 +1,45 @@
+# Tina Belcher
+# by Charlie M
+
+$t = "$thoughts ";
+$x = "\e[m  ";          #reset color
+$b = "\e[48;5;236m  ";  #fake black
+$k = "\e[48;5;235m  ";  #fake black - glasses
+$s = "\e[48;5;223m  ";  #skin color
+$w = "\e[107m  ";       #white
+$r = "\e[48;5;9m  ";    #red
+$l = "\e[48;5;75m  ";   #light blue
+$j = "\e[44m  ";        #blue
+$y = "\e[48;5;11m  ";
+
+$the_cow = <<EOC;
+     $t
+      $t    $b          $x
+       $t $b              $x
+        $b                  $x
+      $b  $y$b              $x
+      $b        $s$b  $s$b  $x
+      $b    $s            $x
+      $b    $k                $x
+      $b    $k$w$b$k$s$k$w$b$k$x
+      $b    $k$w  $k$s$k$w  $k$x
+      $b    $s$k  $s    $k  $x
+      $b    $s            $x
+        $b  $s  $k    $s$x
+            $s        $x
+            $l$s    $x
+          $l          $x
+          $l            $x
+        $s$l$j  $l  $j  $x
+        $s$l          $s$x
+        $s$l          $s$x
+        $s$j          $s$x
+        $s$j          $s$x
+        $j              $x
+            $s$x  $s$x
+            $s$x  $s$x
+            $w$x  $w$x
+            $r$x  $r$x
+            $w$x  $w$x
+            $b  $x$b  $x
+EOC

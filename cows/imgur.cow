@@ -1,0 +1,17 @@
+#
+# removed.png
+# 
+# The image you are requesting does not exist or is no longer available.
+#
+
+$the_cow = <<EOC;
+  $thoughts
+   $thoughts
+
+    [48;05;235m[38;05;7mThe image you are         [0m
+    [48;05;235m[38;05;7mrequesting does not exist [0m
+    [48;05;235m[38;05;7mor is no longer available.[0m
+    [48;05;235m[38;05;7m                          [0m
+    [48;05;235m[38;05;7mimgur.com                 [0m
+    [48;05;235m[38;05;7m                          [0m
+EOC

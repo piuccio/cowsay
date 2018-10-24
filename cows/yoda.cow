@@ -1,0 +1,42 @@
+# Yoda
+# by Charlie M
+
+$x = "\e[m  ";          #reset color
+$b = "\e[48;5;235m  ";  #fake black
+$g = "\e[48;5;35m  ";   #green
+$n = "\e[48;5;22m  ";   #green dark
+
+$w = "\e[107m  ";       #white
+$c = "\e[48;5;58m  ";  #collar brown
+$r = "\e[48;5;172m  ";   #brown 1
+$o = "\e[48;5;94m  ";   #brown 2
+$z = "\e[48;5;52m  ";   #dark brown
+
+$t = "$thoughts ";
+
+$the_cow = <<EOC;
+          $t
+           $t
+            $t
+                     $g      $x
+                 $w$g          $w$x
+     $g    $x$w  $g  $n$g    $n$g$w  $x$g    $x
+       $g$n$g  $w$g    $n$g$n$g  $w$g  $n$g$x
+         $g$n  $g  $n            $g$n  $g  $x
+         $g$n  $g$n$w$b$n$g$n$w$b$n    $g$x
+           $g$n$g        $n$g      $n$g$x
+               $n$g    $n    $g  $n$x
+                 $n    $g    $n  $x
+               $r    $c$n    $c$r  $x
+               $r    $c        $r    $x
+             $r      $o$c$g  $o$r    $x
+             $r    $o$n$g$n$g  $o$r  $x
+             $r    $o$n$g  $z$g$o$r  $x
+             $o$r  $o  $g$z  $o  $r$o$x
+               $o      $c$z  $o    $x
+             $r        $c  $z$r      $x
+           $o  $r        $c$z$r      $x
+           $r    $o      $c$z$o      $r$x
+           $o    $g  $n$g$c$z$g  $n$g$o$x
+
+EOC

@@ -1,0 +1,45 @@
+# Gene
+# by Charlie M
+
+$x = "\e[m  ";          #reset color
+$b = "\e[48;5;236m  ";  #fake black
+$s = "\e[48;5;223m  ";  #skin color
+$w = "\e[107m  ";       #white
+$r = "\e[48;5;9m  ";    #red
+$l = "\e[48;5;75m  ";   #light blue
+$j = "\e[44m  ";        #blue pants
+$y = "\e[48;5;11m  ";   #yellow shirt
+$t = "$thoughts ";
+
+$the_cow = <<EOC;
+   $t
+    $t    $b          $x
+     $t $b              $x
+      $b                  $x
+    $b                    $x
+    $b    $s$b  $s$b  $s$b$x
+    $b    $s            $x
+    $b    $s$w  $s    $w  $x
+    $b$s$b$s$w$b$s    $w$b$x
+  $b  $s                $x
+    $b  $s    $b        $x
+      $b  $s          $x
+          $s          $x        $b$x
+        $y            $x      $b    $x
+      $y                $x  $b    $l  $x
+    $y      $s    $y      $b$w$b$l  $x
+  $s                $y  $w  $l    $x
+  $s          $y      $b$w$l  $s  $x
+  $y$s    $y        $w  $l    $s  $x
+  $y              $b$w$l    $s$x
+  $y            $w  $l    $y$x
+  $y          $l        $y  $x
+  $y            $l    $y    $x
+    $j            $l$j    $x
+    $j        $x$j        $x
+    $j        $x$j        $x
+      $s    $x    $s    $x
+      $w    $x    $w    $x
+      $r    $w$x  $r    $w$x
+
+EOC

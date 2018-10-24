@@ -1,0 +1,66 @@
+# Banjo Kazooie
+# by Charlie M
+
+$x = "\e[m  ";          #reset color
+$k = "\e[48;5;235m  ";  #black
+$g = "\e[48;5;35m  ";   #green
+$a = "\e[48;5;246m  ";  #gray
+$d = "\e[48;5;240m  ";  #dark gray pants
+$p = "\e[48;5;238m  ";  #darker gray
+$e = "\e[41m  ";        #red
+$y = "\e[48;5;11m  ";   #yellow
+$m = "\e[48;5;178m  ";  #darker yellow
+$u = "\e[48;5;223m  ";  #skin color
+$v = "\e[48;5;216m  ";  #skin color 2
+$l = "\e[48;5;75m  ";   #light blue
+$b = "\e[48;5;21m  ";   #blue
+$w = "\e[107m  ";       #white
+$r = "\e[48;5;172m  ";  #brown 1
+$z = "\e[48;5;94m  ";   #brown 2
+
+$t = "$thoughts ";
+
+$the_cow = <<EOC;
+              $t
+               $t                                     $k  $x
+                $t                                    $k$y$k$x
+                  $k      $x                          $k$e$y$k$x
+                $k$r      $k  $x$k    $x          $k    $e  $k$x
+              $k$z$r        $k  $r  $z$k$x      $k$e      $k$x
+                $k  $z    $r  $k$u  $r$k$x    $k$e        $k  $x
+                $k  $z  $r        $u$k$x    $k$e    $w  $e$w$k$x
+              $k$w  $r$w  $z$r      $z$k$x  $k$e    $w$k$g$k  $x
+    $k    $x  $k$w$k$r$k$w  $r      $z$k$x  $k$e    $w$k$g$k      $x
+  $k$p  $u$k    $w$k$r$k$w  $z$r  $z    $k  $y      $w$y  $m    $y$k  $x
+  $k$p    $k$u    $l$r$l$w$v$u$v$z      $k$y    $m  $y              $m$k$x
+    $k    $v$u                  $v$z    $k$y        $m$k              $x
+    $k$v$k$u            $v$u      $z    $k      $y    $m$e  $k$x
+    $k$v$r$u            $k$u      $z    $k$b$k      $y  $m$e$k$x
+      $k$r$v$u        $k$v$u    $r$z      $k$b$k$e    $k$y  $k$x
+        $k$r$v      $k$v    $r  $z      $k  $b$k$e  $k$x$k    $x
+          $k      $r          $z  $k    $b  $k$e  $k$x
+            $k$b$k                $b    $k    $b  $k$x
+            $k$r$v$p$v$p$v    $r$b$l  $k  $r$z$k$b$k$x
+          $k$b$r$u$p$u$p$u      $b$l  $r      $z$k  $x
+          $k$b$r$u  $w$u        $b$l  $r        $z$k$x
+        $k$z$b$r$v$u$w$u      $v$b$l  $k$r        $k$x
+        $k$z$b$r  $u            $r$b$l$k$r        $k$x
+        $k$z  $b$r$u          $v$r  $b  $k$r      $k$x
+        $k$z  $b$r$v$u        $v$r  $z$b$k  $r  $z$k$x
+        $k$z$v$z$k$r$v      $v$r    $z  $k$z$u$z  $k$x
+        $k$v    $k$m$a      $y        $k  $u        $k$x
+        $k$v    $k$d$a$k  $a$d  $y$d  $k$u          $k$x
+        $k$v$z  $k$m$a      $y      $m$k$v$z$u      $k$x
+        $k$v  $z$k$m      $y        $m$k$z$v$u    $v$k$x
+          $k$v  $k$m    $k$m$y      $m  $k$u      $k$x
+            $k    $m      $k$y      $m  $k        $x
+              $k                        $x
+                $k$z      $k$z$r  $z  $k$x
+                $k$z      $k  $r  $z  $k$x
+          $k    $z        $k  $r  $z    $k$x
+        $k$r  $z$v    $k  $u    $z$v    $k$x
+      $k$v  $z$u  $v$k$u$r$u  $r$u  $v  $k$x
+      $k$v  $z$u  $v$k$u$r$u  $r$u  $v  $k$x
+      $k                                $x
+
+EOC

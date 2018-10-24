@@ -1,0 +1,31 @@
+# Ignignokt, from the Mooninites (ATHF)
+# by Charlie M
+
+$x = "\e[m  "; #end color
+$g = "\e[42m  ";
+$b = "\e[44m  ";
+$b1 = "\e[44m $x";
+$t = "$thoughts ";
+
+$the_cow = <<EOC;
+   $t
+    $t
+     $t        $g      $x          $g      $x
+      $t       $g        $x        $g      $x
+       $t      $g        $x$g              $x
+            $g                             $x
+            $g                             $x        $b1
+            $g       $b$g        $b$g      $x        $b1
+             $g    $b$g            $b$g    $x     $b     $x
+             $g  $b$g$b  $g    $b  $g$b$g  $x       $b $x
+             $g                            $x       $b $x
+             $g                              $b        $x
+             $g                              $x
+         $b$g         $b          $g         $x
+       $b$x$g                                $x
+     $b$x  $g                                $x
+     $b$x  $g                                $x
+                      $b$x      $b$x
+                $b      $x      $b      $x
+
+EOC

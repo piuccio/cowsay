@@ -1,0 +1,37 @@
+# Pikachu
+# by Charlie M
+
+$t = "$thoughts ";
+$b = "\e[48;5;0m  ";  #black
+$y = "\e[48;5;226m  ";
+$o = "\e[48;5;214m  ";
+$w = "\e[107m  ";
+$x = "\e[m  ";
+$r = "\e[41m  ";
+
+$the_cow = <<EOC;
+      $t    $y$x
+       $t   $y  $x
+        $t  $y    $x
+            $y      $x              $y$x
+            $x      $y$x            $y$o$x
+          $o$y$o$x                $y  $x
+            $o$y    $o$y        $o$y  $x
+                $o$y                $o$x
+                  $o$y              $x
+                $o$y                $o$x
+                $y$b $w$y      $b$w $y$x
+                $y$b   $y      $b   $y$x
+              $r  $y      $b$y      $r  $x
+                $r  $y            $r  $x
+                  $o$y  $o$b$o$y  $o$x
+                $o$y$o$y        $o$y$o$x
+                $y      $o    $y      $x
+              $o$y$o$y    $o$y    $o$y$o$x
+              $y  $x$y            $x$y  $x
+              $y$x$y                $x$y$x
+                $o$y                $o$x
+                  $o$y$o$x    $o$y$o$x
+                $y  $x            $y  $x
+
+EOC

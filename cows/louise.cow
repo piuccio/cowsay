@@ -1,0 +1,42 @@
+# Louise
+# by Charlie M
+
+$x = "\e[m  ";          #reset color
+$b = "\e[48;5;235m  ";  #fake black
+$s = "\e[48;5;223m  ";  #skin color
+$w = "\e[107m  ";       #white
+$r = "\e[48;5;212m  ";  #pink hat
+$g = "\e[48;5;70m  ";   #green shirt
+$t = "$thoughts ";
+
+$the_cow = <<EOC;
+   $t
+    $t  $r$x            $r$x
+     $t $r  $x        $r  $x
+        $r   $x      $r   $x
+        $r    $x    $r    $x
+         $r   $x    $r   $x
+          $r  $x    $r  $x
+          $r          $x
+        $r              $x
+      $r      $b$s    $b$r$x
+      $r    $b$w  $s$w  $r$x
+      $r    $s$w$b$s$w$b$r$x
+      $r    $s          $r$x
+      $r    $s$b        $r$x
+        $r  $s          $r$x
+        $r  $s        $r  $x
+    $b  $r$b  $s    $b$r$b  $x
+      $b      $s    $b    $x
+            $g      $x
+          $g          $x
+          $s$g      $s$x
+          $s$g      $s$x
+         $s$g        $s$x
+        $s$g          $s$x
+        $g              $x
+        $g              $x
+            $s$x    $s$x
+            $s$x    $s$x
+            $b  $x  $b  $x
+EOC

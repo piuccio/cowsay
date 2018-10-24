@@ -1,0 +1,32 @@
+# The Mooninites
+# by Charlie M
+
+$t = "$thoughts ";
+$x = "\e[m  ";     #end color
+$g = "\e[42m  ";   #green
+$b = "\e[44m  ";   #blue
+$b1 = "\e[44m $x"; #blue 1 space
+$r = "\e[45m  ";   #err color
+
+$the_cow = <<EOC;
+   $t
+    $t
+     $t        $g      $x          $g      $x
+      $t       $g        $x        $g      $x
+       $t      $g        $x$g              $x                               $r   $x
+            $g                             $x                               $r   $x
+            $g                             $x      $b1     $r                    $x
+            $g       $b$g        $b$g      $x      $b1     $r$b$r            $b$r$x
+             $g    $b$g            $b$g    $x   $b     $x  $r  $b$r        $b$r  $x
+             $g  $b$g$b  $g    $b  $g$b$g  $x     $b $x    $r    $b$r    $b$r        $x
+             $g                            $x     $b $x    $r      $b$r$b$r          $x
+             $g                              $b      $x  $b$r  $b $r      $b $r      $b$x
+             $g                              $x        $b$x$r  $b $r      $b $r      $x$b$x
+         $b$g         $b          $g         $x      $b$x  $r                        $x  $b$x
+       $b$x$g                                $x      $b$x  $r                        $x  $b$x
+     $b$x  $g                                $x            $r  $b            $r      $x
+     $b$x  $g                                $x            $r                        $x
+                      $b$x      $b$x                              $b$x     $b$x
+                $b      $x      $b      $x                        $b$x     $b$x
+                                                             $b     $x     $b     $x
+EOC

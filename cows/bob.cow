@@ -1,0 +1,50 @@
+# Bob Belcher
+# by Charlie M
+
+$x = "\e[m  ";            #end color
+$h = "\e[48;5;235m  ";    #hair
+$d = "\e[48;5;240m  ";    #dark gray pants
+$d2 = "\e[48;5;238m   ";  #darker gray
+$o = "\e[48;5;216m  ";    #skin color
+$k = "\e[48;5;215m  ";    #skin color 2
+$s = "\e[48;5;246m  ";    #gray shirt
+$w = "\e[107m  ";         #white
+$r = "\e[41m  ";          #red
+$g = "\e[48;5;70m  ";     #green
+$y = "\e[48;5;11m  ";     #yellow
+$m = "\e[48;5;178m  ";    #hamburger bun
+$t = "$thoughts ";
+
+$the_cow = <<EOC;
+     $t
+      $t         $h    $x
+       $t     $h            $x
+        $t  $h                $x
+          $h    $o        $x
+        $h    $o  $w  $o  $w  $x
+          $h  $o  $h$w$o  $h$w$x
+          $h  $o              $x
+          $h  $o  $h          $x
+            $h$o  $h          $x
+              $o          $x
+              $o        $x
+              $o        $x
+              $o        $x
+          $s$w$s      $w$s$x
+        $s  $w  $s    $w$s$x      $m      $x
+      $s    $w          $w$s$x  $m          $x
+      $o  $s$w            $k$x  $g$y$g  $y$g$x
+      $h$o$s$w              $k$x$r          $x
+      $o$o$s$w              $k  $m          $x
+      $h$o$d$w              $k$w              $x
+      $o$o$d$w              $x$h$k  $o    $x
+      $h$o$d$w              $x  $k$h$k$h$x
+      $o  $d$w              $x
+        $o$d$w              $x
+          $d$w              $x
+            $d  $x  $d2 $x
+            $d  $x  $d2 $x
+            $w  $x  $w  $x
+            $h    $x$h    $x
+
+EOC

@@ -1,0 +1,48 @@
+# The Professor
+# by Charlie M
+
+$t = "$thoughts ";
+$x = "\e[m  ";          #reset color
+$b = "\e[48;5;236m  ";  #fake black
+$n = "\e[48;5;95m  ";  #pants color 2
+$s = "\e[48;5;223m  "; #skin color
+$w = "\e[107m  ";       #white
+$o = "\e[48;5;216m  ";
+$l = "\e[48;5;14m  ";   #hair color
+$g = "\e[48;5;145m  ";  #gray color
+
+$the_cow = <<EOC;
+     $t
+      $t            $s      $x
+       $t         $s  $o$s   $x
+                $s        $o$s$x
+              $s          $o$s$x
+            $s                $x
+        $l  $g$l    $g$s      $x
+        $l  $g$l    $g    $s$x
+        $l  $g$l    $g$s    $x
+          $s              $x
+          $s              $x
+        $s      $b  $s    $w$x
+                $b  $s  $w    $x
+                $s      $w  $l$w$x
+                  $l    $w  $l$w  $x
+                $w$l    $w$l$w     $x
+                $w$l    $w$l$w      $x
+                $g$l    $w          $x
+                $w$l    $w          $x
+                $w$l    $w  $l$w    $x
+                $l      $w  $l$w    $x
+               $l       $w  $l$w    $x
+              $l        $w  $l$w    $x
+              $l        $w  $l$w    $x
+              $l        $w  $l$w    $x
+              $n        $w  $l$w    $x
+               $n       $w    $s    $x
+                $n$b$n  $w    $s    $x
+                $n$b$n  $w      $s  $x
+                $n  $b$n$w        $x
+                $n  $b$n$w        $x
+                $n  $b$n$w        $x
+                $n  $b$n      $x
+EOC

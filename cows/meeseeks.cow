@@ -1,0 +1,44 @@
+# Mr. Meeseeks!
+# by Charlie M
+
+$t = "$thoughts ";
+$x = "\e[m  ";          #reset color
+$b = "\e[48;5;235m  ";  #fake black
+$l = "\e[48;5;14m  ";   #light blue
+$w = "\e[107m  ";       #white
+$d = "\e[48;5;6m  ";    #dark blue
+
+$the_cow = <<EOC;
+        $t              $b      $x
+         $t         $b  $l      $b$x
+          $t      $b$l            $b  $x
+                $b$l  $b  $l$b  $l    $b  $x
+              $b$d$l                    $b$x
+              $b$d$l    $w$l$w$l        $b$x
+              $b$d$b  $l$b$l$b$l  $b$l  $b$x
+              $b  $l                $b$l$b$x
+              $b$d  $b$l        $b$l$b$l$b$x
+                $b$d  $b$l      $b$l  $b$x
+                  $b$d$l$b      $l  $b$x
+                    $b$d$l        $b$x
+                $b    $d      $l$b$x
+              $b  $l            $b$x
+          $b  $l$d    $l    $d    $b  $x
+      $b  $l  $d$b  $l      $d$b  $l  $b$x
+    $b$l  $d$b  $x$b$l      $d$b$x$b$l    $b$x
+    $b$l$b  $x    $b$l      $d$b$x  $b  $l  $b$x
+    $b$l  $b$x    $b$l      $d$b$x      $b$l$b$x
+      $b$l  $b$x  $b$l      $d$b$x    $b$l    $b$x
+        $b$l$b$x $b $l        $b$x$b  $l    $b$x
+        $b$d$l$b   $l         $b  $l  $d$b  $x
+          $b$d$l$b$l          $b$l    $b$x
+          $b$d$b  $l          $b$l  $d$b$x
+          $b$d  $b$l          $b$d  $b$x
+          $b  $d$b$l          $b    $x
+              $b  $l            $b$x
+                  $b$l      $d  $b$x
+                    $b$l    $d$b$x
+                    $b$l$b$d$l$b$x
+                    $b$l$b  $l$b$x
+                    $b$l$b  $l$b$x
+EOC
