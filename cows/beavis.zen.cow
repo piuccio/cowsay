@@ -1,6 +1,7 @@
 ##
 ## Beavis, with Zen philosophy removed.
 ##
+$eye = chop($eyes);
 $the_cow = <<EOC;
    $thoughts         __------~~-,
     $thoughts      ,'            ,
@@ -11,7 +12,7 @@ $the_cow = <<EOC;
         |                  |
          |   _--           |
          _| =-.     .-.   ||
-         o|/o/       _.   |
+         $eye|/$eye/       _.   |
          /  ~          \\ |
        (____\@)  ___~    |
           |_===~~~.`    |

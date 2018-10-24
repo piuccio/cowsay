@@ -1,6 +1,7 @@
 ##
 ## The cheese from milk & cheese
 ##
+$eye = chop($eyes);
 $the_cow = <<EOC;
    $thoughts
     $thoughts
@@ -9,12 +10,12 @@ $the_cow = <<EOC;
     |                 ||
     |                 ||
    |    ###\\  /###   | |
-   |     0  \\/  0    | |
+   |     $eye  \\/  $eye    | |
   /|                 | |
  / |        <        |\\ \\
 | /|                 | | |
 | |     \\_______/   |  | |
-| |                 | / /
+| |        $tongue       | / /
 /||                 /|||
    ----------------|
         | |    | |

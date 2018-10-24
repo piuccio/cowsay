@@ -1,11 +1,12 @@
 ##
 ## Another canonical koala?
 ##
+$eye = chop($eyes);
 $the_cow = <<EOC;
    $thoughts
     $thoughts        .
      .---.  //
-    Y|o o|Y// 
+    Y|$eye $eye|Y// 
    /_(i=i)K/ 
    ~()~*~()~  
     (_)-(_)   

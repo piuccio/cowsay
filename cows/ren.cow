@@ -1,12 +1,13 @@
 ##
 ## Ren 
 ##
+$eye = chop($eyes);
 $the_cow = <<EOC;
    $thoughts
     $thoughts
     ____  
    /# /_\\_
-  |  |/o\\o\\
+  |  |/$eye\\$eye\\
   |  \\\\_/_/
  / |_   |  
 |  ||\\_ ~| 

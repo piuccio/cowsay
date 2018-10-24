@@ -1,11 +1,13 @@
 ##
 ## Hello Kitty
 ##
+$eye = chop($eyes);
 $the_cow = <<EOC;
   $thoughts
    $thoughts
       /\\_)o<
      |      \\
-     | O . O|
+     | $eye . $eye|
       \\_____/
+         $tongue
 EOC

@@ -1,13 +1,14 @@
 ##
 ## Ghostbusters!
 ##
+$eye = chop($eyes);
 $the_cow = <<EOC;
           $thoughts
            $thoughts
             $thoughts          __---__
                     _-       /--______
                __--( /     \\ )XXXXXXXXXXX\\v.
-             .-XXX(   O   O  )XXXXXXXXXXXXXXX-
+             .-XXX(   $eye   $eye  )XXXXXXXXXXXXXXX-
             /XXX(       U     )        XXXXXXX\\
           /XXXXX(              )--_  XXXXXXXXXXX\\
          /XXXXX/ (      O     )   XXXXXX   \\XXXXX\\
