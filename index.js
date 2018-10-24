@@ -11,6 +11,7 @@ exports.think = function (options) {
 };
 
 exports.list = cows.list;
+exports.listSync = cows.listSync;
 
 function doIt (options, sayAloud) {
 	var cowFile;
