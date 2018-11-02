@@ -102,7 +102,6 @@ export { default as MAILCHIMP } from '.cows/mailchimp.cow';
 export { default as MAZE_RUNNER } from '.cows/maze-runner.cow';
 export { default as MECH_AND_COW } from './cows/mech-and-cow.cow';
 export { default as MEOW } from './cows/meow.cow';
-export { default as MILK_900ML } from '.cows/milk-900ml.cow';
 export { default as MILK } from './cows/milk.cow';
 export { default as MINOTAUR } from '.cows/minotaur.cow';
 export { default as MONA_LISA } from '.cows/mona-lisa.cow';
