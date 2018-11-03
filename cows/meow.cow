@@ -1,7 +1,6 @@
 ##
 ## A meowing tiger?
 ##
-$eye = chop($eyes);
 $the_cow = <<EOC;
   $thoughts
    $thoughts ,   _ ___.--'''`--''//-,-_--_.

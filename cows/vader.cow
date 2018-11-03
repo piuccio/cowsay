@@ -1,7 +1,6 @@
 ##
 ## Cowth Vader, from geordan@csua.berkeley.edu
 ##
-$eye = chop($eyes);
 $the_cow = <<EOC;
         $thoughts    ,-^-.
          $thoughts   !${eye}Y${eye}!

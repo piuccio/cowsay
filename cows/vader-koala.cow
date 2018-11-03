@@ -1,7 +1,6 @@
 ##
 ## Another canonical koala?
 ##
-$eye = chop($eyes);
 $the_cow = <<EOC;
    $thoughts
     $thoughts        .
