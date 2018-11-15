@@ -9,7 +9,7 @@ $the_cow = <<EOC;
          $thoughts
           $thoughts
           |\\___/|
-         =) ${eye}Y${eye} (=            
+         =) $eyeY$eye (=            
           \\  ^  /
            )=*=(       
           /     \\

@@ -4,7 +4,7 @@
 $eye = chop($eyes);
 $the_cow = <<EOC;
         $thoughts    ,-^-.
-         $thoughts   !${eye}Y${eye}!
+         $thoughts   !$eyeY$eye!
           $thoughts /./=\\.\\______
                ##      $tongue)\\/\\
                 ||-----w||

@@ -6,7 +6,7 @@ $the_cow = <<EOC;
   $thoughts
    $thoughts
        ___  
-     {~${eye}_${eye}~}
+     {~$eye_$eye~}
       ( Y )
      ()~*~()   
      (_)-(_)   

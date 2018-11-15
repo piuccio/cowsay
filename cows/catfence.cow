@@ -12,7 +12,7 @@ $the_cow = <<EOC;
                  'MMM88&&&&&&'
           $thoughts        'MMM8&&&'      *
           |\\___/|
-         =) ${eye}Y${eye} (=            .              '
+         =) $eyeY$eye (=            .              '
           \\  ^  /
            )=*=(       *
           /     \\
