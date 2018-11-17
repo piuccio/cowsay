@@ -1,10 +1,9 @@
-$extra = chop($eyes);
 $the_cow = <<EOC;
  $thoughts
   $thoughts
   ,-''''-.
  (.  ,.   L        ___...__
- /$extra} ,-`  `'-==''``        ''._
+ /$eye} ,-`  `'-==''``        ''._
 //{                           '`.
 \\_,X ,                         : )
  $tongue 7                          ;`

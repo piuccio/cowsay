@@ -1,7 +1,6 @@
 ##
 ## A mysterious turtle...
 ##
-$eye = chop($eyes);
 $the_cow = <<EOC;
     $thoughts                                  ___-------___
      $thoughts                             _-~~             ~~-_

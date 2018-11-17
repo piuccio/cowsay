@@ -1,7 +1,6 @@
 ##
 ## Milk from Milk and Cheese
 ##
-$eye = chop($eyes);
 $the_cow = <<EOC;
  $thoughts     ____________ 
   $thoughts    |__________|

@@ -1,7 +1,6 @@
 ##
 ## A stegosaur with a top hat?
 ##
-$eye = chop($eyes);
 $the_cow = <<EOC;
 $thoughts                             .       .
  $thoughts                           / `.   .' " 

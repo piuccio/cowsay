@@ -1,7 +1,6 @@
 ##
 ## ejm97 http://www.ascii-art.de/ascii/ghi/goat.txt
 ##
-$eye = chop($eyes);
 $the_cow = <<EOC;
        $thoughts
         $thoughts

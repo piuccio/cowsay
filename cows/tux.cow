@@ -2,7 +2,6 @@
 ## TuX
 ## (c) pborys@p-soft.silesia.linux.org.pl 
 ##
-$eye = chop($eyes);
 $the_cow = <<EOC;
    $thoughts
     $thoughts

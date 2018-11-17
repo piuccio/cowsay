@@ -2,7 +2,6 @@
 #	Cat picture by Joan Stark
 #	Transformed into cowfile by Myroslav Golub
 #
-$eye = chop($eyes);
 $the_cow = <<EOC;
        $thoughts     *     ,MMM8&&&.            *
                   MMMM88&&&&&    .
