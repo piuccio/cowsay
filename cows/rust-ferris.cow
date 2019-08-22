@@ -1,0 +1,12 @@
+##
+## rust ferris
+##
+$the_cow = <<EOC;
+       $thoughts
+        $thoughts
+         $thoughts
+          _~^~^~_
+      \) /  o o  \ (/
+        '_   -   _'
+        / '-----' \
+EOC
