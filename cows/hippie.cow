@@ -1,3 +1,4 @@
+$eye = chop($eyes);
 $the_cow = <<EOC;
                        $thoughts              ___
                         $thoughts            ///\\\\\\/----

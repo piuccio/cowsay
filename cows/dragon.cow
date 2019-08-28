@@ -1,6 +1,7 @@
 ##
 ## The Whitespace Dragon
 ##
+$eye = chop($eyes);
 $the_cow = <<EOC;
       $thoughts                    / \\  //\\
        $thoughts    |\\___/|      /   \\//  \\\\
