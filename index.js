@@ -1,4 +1,4 @@
-var baloon = require("./lib/balloon");
+var balloon = require("./lib/balloon");
 var cows = require("./lib/cows");
 var faces = require("./lib/faces");
 
@@ -27,5 +27,5 @@ function doIt (options, sayAloud) {
 	face.thoughts = sayAloud ? "\\" : "o";
 
 	var action = sayAloud ? "say" : "think";
-	return baloon[action](options.text || options._.join(" "), options.n ? null : options.W) + "\n" + cow(face);
+	return balloon[action](options.text || options._.join(" "), options.n ? null : options.W) + "\n" + cow(face);
 }

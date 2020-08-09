@@ -10,7 +10,7 @@ $the_cow = <<EOC;
   |* * * * * * * * * * OOOOOOOOOOOOOOOOOOOOOOOOO|
   | * * * * * * * * *  :::::::::::::::::::::::::|
   |* * * * * * * * * * OOOOOOOOOOOOOOOOOOOOOOOOO|
-  | * * * * * * * * *  ::::::::::::::::::::;::::|
+  | * * * * * * * * *  :::::::::::::::::::::::::|
   |* * * * * * * * * * OOOOOOOOOOOOOOOOOOOOOOOOO|
   |:::::::::::::::::::::::::::::::::::::::::::::|
   |OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO|
