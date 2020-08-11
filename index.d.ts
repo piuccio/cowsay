@@ -38,23 +38,23 @@ export interface IOptions {
     y?: boolean, // wired
 }
 
-declare type callback_type = (error: NodeJS.ErrnoException, cow_names: string[]) => void;
+type callback_type = (error: NodeJS.ErrnoException, cow_names: string[]) => void;
 
 /**
  * @param callback
  * @returns a list of cow names from the cows folder without the .cow extension.
  * @example
  * ```
- * function callback(error: NodeJS.ErrnoException, cow_names: string[]): void {
- *      if (error) {
- *          console.log(`Error reading cow file names: ${error.message}`);
- *      }
- *      else if (cow_names) {
- *          console.log('Cows: ' + cow_names.length);
- *      }
- * }
+ * function get_cows(error: NodeJS.ErrnoException, cow_names: Array<string>): void {
+ *    if (error) {
+ *        console.log(`Error getting cow names: ${error.message}`);
+ *    }
+ *    else if (cow_names) {
+ *        console.log(`Number of cows available: ${cow_names.length}`);
+ *    }
+ *  }
  * 
- * cowsay.list(callback);
+ * cowsay.list(get_cows);
  * ```
  */
 export function list(callback: callback_type): Promise<string[]>;
