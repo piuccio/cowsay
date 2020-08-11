@@ -113,9 +113,9 @@ exports.think = function (options) {
  * @returns a list of cow names from the cows folder without the .cow extension.
  * @example
  * ```
- * function get_cows(error: NodeJS.ErrnoException, cow_names: Array<string>): void {
+ * function get_cows(error, cow_names) {
  *    if (error) {
- *        console.log(`Error getting cow names: ${error.message}`);
+ *        console.log(error);
  *    }
  *    else if (cow_names) {
  *        console.log(`Number of cows available: ${cow_names.length}`);
