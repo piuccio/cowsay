@@ -49,17 +49,17 @@ It acts in the same way as the original cowsay, so consult `cowsay(1)` or run `c
 ## Usage as a module
 
 cowsay can be used as any other npm dependency
+```js
+var cowsay = require("cowsay");
 
-    var cowsay = require("cowsay");
+console.log(cowsay.say({
+    text : "I'm a moooodule",
+    e : "oO",
+    T : "U "
+}));
 
-    console.log(cowsay.say({
-    	text : "I'm a moooodule",
-    	e : "oO",
-    	T : "U "
-    }));
-
-    // or cowsay.think()
-
+// or cowsay.think()
+```
 ````
  _________________
 ( I'm a moooodule )
@@ -70,6 +70,57 @@ cowsay can be used as any other npm dependency
              U  ||----w |
                 ||     ||
 ````
+
+getting a list of cow names:
+```js
+function get_cows(error, cow_names) {
+    if (error) {
+        console.log(error)
+    }
+    else if (cow_names) {
+        console.log(`Number of cows available: ${cow_names.length}`);
+    }
+}
+
+cowsay.list(get_cows);
+```
+
+#### Typescript examples:
+```ts
+import * as cowsay from "cowsay"
+
+let output: string = cowsay.say({ text: 'Hello from typescript!' });
+
+console.log(output);
+```
+
+getting a list of cow names:
+```ts
+function get_cows(error: NodeJS.ErrnoException, cow_names: Array<string>): void {
+    if (error) {
+        console.log(`Error getting cow names: ${error.message}`)
+    }
+    else if (cow_names) {
+        console.log(`Number of cows available: ${cow_names.length}`);
+    }
+}
+
+cowsay.list(get_cows);
+```
+
+importing the `IOptions` interface directly:
+```ts
+import { IOptions } from "cowsay" // optional
+
+let opts: IOptions = {
+    text: "Hello from TypeScript!",
+    e: '^^',
+    r: true,
+};
+
+console.log(cowsay.say(opts));
+```
+
 
 ## Pipe from standard input
 
