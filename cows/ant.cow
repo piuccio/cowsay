@@ -1,0 +1,6 @@
+$the_cow = <<EOC;
+   $thoughts
+    ,, _  _
+    0-(_)(_)
+      J J J
+EOC
