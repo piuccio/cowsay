@@ -1,0 +1,11 @@
+# Cocoa - a mix of Rottie and Shepard
+
+$the_cow = <<EOC;
+    $thoughts
+      /^ ^\
+     / 0 0 \
+     V\ Y /V
+      / - \
+     /    |
+    V__) ||
+EOC
