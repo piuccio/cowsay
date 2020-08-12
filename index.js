@@ -50,6 +50,8 @@ var faces = require("./lib/faces");
  *     y: true, // using y mode - youthful mode
  * })
  * ```
+ * 
+ * @returns {string} compiled cow
  */
 exports.say = function (options) {
 	return doIt(options, true);
@@ -103,14 +105,14 @@ exports.say = function (options) {
  *     y: true, // using y mode - youthful mode
  * })
  * ```
+ * 
+ * @returns {string} compiled cow
  */
 exports.think = function (options) {
 	return doIt(options, false);
 };
 
 /**
- * @param callback
- * @returns a list of cow names from the cows folder without the .cow extension.
  * @example
  * ```
  * function get_cows(error, cow_names) {
@@ -124,6 +126,8 @@ exports.think = function (options) {
  * 
  * cowsay.list(get_cows);
  * ```
+ * @param callback
+ * @returns {Promise} promise
  */
 exports.list = cows.list;
 
