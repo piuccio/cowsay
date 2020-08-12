@@ -1,0 +1,9 @@
+$the_cow = <<EOC;
+      $thoughts
+       $thoughts
+    ((_,...,_))    
+       |$eye $eye|
+       \   /
+        ^_^
+         $tongue
+EOC
