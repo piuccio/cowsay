@@ -1,0 +1,10 @@
+# Art by Joan G. Stark
+
+$the_cow = <<EOC;
+        $thoughts
+        ,   ,
+       { \w/ }
+        `>!<`
+        (/^\)
+        '   '
+EOC
