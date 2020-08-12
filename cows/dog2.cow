@@ -1,0 +1,10 @@
+# Razza - a mix of Lab and Chow
+
+$the_cow = <<EOC;
+    $thoughts
+       / \__
+      (    $eye\___
+      /         O
+     /   (_____/
+    /_____/   $tongue
+EOC
