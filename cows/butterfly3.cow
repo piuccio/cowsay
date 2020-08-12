@@ -1,0 +1,10 @@
+# Art by Max Strandberg
+
+$the_cow = <<EOC;
+     $thoughts
+      $thoughts
+     _   _  
+    (o\w/o)
+     `>I<'
+     (/'\)
+EOC
