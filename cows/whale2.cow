@@ -1,0 +1,11 @@
+# Art by Riitta Rasimus
+$the_cow = <<EOC;
+      $thoughts
+       $thoughts
+           .
+          ":"
+        ___:____     |"\/"|
+      ,'        `.    \  /
+      |  $eye        \___/  |
+    ~^~^~^~^~^~^~^~^~^~^~^~^~
+EOC
