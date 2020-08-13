@@ -1,0 +1,11 @@
+# Art by Donovan Bake
+$the_cow = <<EOC;
+     $thoughts
+      $thoughts
+    ______          
+   /  ___ \         
+  |  / ,.\ |$eye    $eye  
+  | |  \d/ | \__/   
+  |__\_____/-(..)   
+_/_____________/ 
+EOC
