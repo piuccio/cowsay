@@ -1,0 +1,13 @@
+# Art by Max
+
+$the_cow = <<EOC;
+    $thoughts
+       ,
+      /|
+     /_|  ,
+    /o  \/|
+    \<__/\|
+     \ |  `
+      \|
+       `
+EOC
