@@ -1,0 +1,12 @@
+# Art by Linda Ball
+
+$the_cow = <<EOC;
+         $thoughts
+          $thoughts
+           ,--,
+     _ ___/ /\|
+ ,;'( )__, )  ~
+//  //   '--; 
+'   \     | ^
+     ^    ^
+EOC
