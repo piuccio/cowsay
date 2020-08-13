@@ -1,0 +1,25 @@
+# Art by Donovan Bake
+$the_cow = <<EOC;
+        $thoughts
+         $thoughts
+           eed*"""""""""**be,
+        .d"                  "b.
+      .d                        b.
+    ."         ..eeeeee..         ".
+   P        z$*"        "*e.        9.
+  A       d"                "b       A
+ J       J    .e*""""""%c     A       L
+A       A    d"          $     L      A
+#       %   d      d**y  'L    %      #
+#       %   $     $ ,, Y  .$   %      #       _ _ 
+#       %   $     *  """   F   %      #      (@)@)
+#       V    4.    $.   .e"    Y      #        % %
+#        $    *.    """"     .Y      V         $ $
+#        'b     "b.      ..e*       Y         .eeee
+V         '$      ""eeee""        eP         A     %
+ Y         eb                ..d*"         _#    O %
+ I    _e%*""""*$ee......ee$*"eeeeeeeezee$**"       $
+  V ,"                                            B
+  J'                                        _,e=""
+.'#######################################DWB''
+EOC
