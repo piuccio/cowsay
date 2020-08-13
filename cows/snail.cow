@@ -1,0 +1,11 @@
+# Art by Hayley Jane Wakenshaw
+
+$the_cow = <<EOC;
+         $thoughts
+          $thoughts
+    .----.   @   @
+   / .-"-.`.  \v/
+   | | '\ \ \_/ )
+ ,-\ `-.' /.'  /
+'---`----'----'
+EOC
