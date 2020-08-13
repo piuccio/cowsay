@@ -1,0 +1,11 @@
+# Art by Dirk-Lueder Kreie
+$the_cow = <<EOC;
+         $thoughts
+          $thoughts
+         __,._
+        /  _  \                                    
+       |  6 \  \  $eyes
+        \___/ .|__||                             
+ __,..="^  . , "  , \                              
+<.__________________/
+EOC
