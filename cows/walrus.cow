@@ -1,0 +1,9 @@
+# Art by Harry Mason
+
+$the_cow = <<EOC;
+     $thoughts
+       ___  
+      /  .\ 
+     /  =__|
+    /    ||
+EOC
