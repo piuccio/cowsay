@@ -1,22 +1,18 @@
-import commonjs from 'rollup-plugin-commonjs';
-import nodeResolve from 'rollup-plugin-node-resolve';
-import string from 'rollup-plugin-string';
+import commonjs from '@rollup/plugin-commonjs';
+import {nodeResolve} from '@rollup/plugin-node-resolve';
+import {string} from 'rollup-plugin-string';
 
 export default {
   input: 'browser.js',
   plugins: [
-    nodeResolve({
-      module: true,
-      jsnext: true,
-    }),
+    nodeResolve(),
     commonjs(),
     string({
       include: '**/*.cow',
     }),
   ],
-  name: 'cowsay',
   output: [
-    { file: 'build/cowsay.umd.js', format: 'umd' },
+    { file: 'build/cowsay.umd.js', format: 'umd', name: 'cowsay' },
     { file: 'build/cowsay.es.js', format: 'es' },
-  ]
+  ],
 }
