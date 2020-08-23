@@ -1,4 +1,4 @@
-import baloon from "./lib/balloon";
+import balloon from "./lib/balloon";
 import replacer from "./lib/replacer";
 import faces from "./lib/faces";
 
@@ -195,7 +195,7 @@ export { default as YASUNA_20 } from '.cows/yasuna_20.cow';
 export { default as YMD_UDON } from '.cows/ymd_udon.cow';
 export { default as ZEN_NOH_MILK } from '.cows/zen-noh-milk.cow';
 
-function converToCliOptions(browserOptions) {
+function convertToCliOptions(browserOptions) {
   const cliOptions = {
     e: browserOptions.eyes || 'oo',
     T: browserOptions.tongue || '  ',
@@ -218,13 +218,13 @@ function doIt (options, sayAloud) {
 	face.thoughts = sayAloud ? "\\" : "o";
 
 	const action = sayAloud ? "say" : "think";
-	return baloon[action](options.text || options._.join(" "), options.n ? null : options.W) + "\n" + replacer(cow, face);
+	return balloon[action](options.text || options._.join(" "), options.n ? null : options.W) + "\n" + replacer(cow, face);
 }
 
 export function say(browserOptions) {
-  return doIt(converToCliOptions(browserOptions), true);
+  return doIt(convertToCliOptions(browserOptions), true);
 }
 
 export function think(browserOptions) {
-  return doIt(converToCliOptions(browserOptions), false);
+  return doIt(convertToCliOptions(browserOptions), false);
 }
