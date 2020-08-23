@@ -1,48 +1,48 @@
-var cowFormat = "#Comment \
-# just some other comment, it's going to be ignored anyway ...\
-$the_cow = <<EOC;\n\
- $thoughts\
-   $thoughts\
-chars($eyes) \
-$tongue\
-\nEOC\n\
-\
-";
+const test = require('tape');
+const replacer = require('../lib/replacer');
+
+const cowFormat = `#Comment 
+# just some other comment, it's going to be ignored anyway ...
+$the_cow = <<EOC;\n
+ $thoughts
+   $thoughts
+chars($eyes)
+$tongue
+EOC
+
+`;
 
 // They are the same...
-var plainText = "\
- $thoughts\
-   $thoughts\
-chars($eyes) \
-$tongue";
+const plainText = `
+ $thoughts
+   $thoughts
+chars($eyes)
+$tongue`;
 
-var expected = " ||   ||chars(oo) U ";
+const expected = `
+ ||
+   ||
+chars(oo)
+U `;
 
-var replacer = require("../lib/replacer");
-exports.cowFormat = function (test) {
-	test.expect(1);
+test('original cow file format', (t) => {
+  t.plan(1);
 
-	var cow = replacer(cowFormat, {
-		thoughts : "||",
-		eyes : "oo",
-		tongue : "U "
-	});
+  const cow = replacer(cowFormat, {
+    thoughts: '||',
+    eyes: 'oo',
+    tongue: 'U ',
+  });
+  t.equal(cow, expected);
+});
 
-	test.equal(cow, expected);
+test('plain text file', (t) => {
+  t.plan(1);
 
-	test.done();
-};
-
-exports.plainText = function (test) {
-	test.expect(1);
-
-	var cow = replacer(plainText, {
-		thoughts : "||",
-		eyes : "oo",
-		tongue : "U "
-	});
-
-	test.equal(cow, expected);
-
-	test.done();
-};
+  const cow = replacer(plainText, {
+    thoughts: '||',
+    eyes: 'oo',
+    tongue: 'U ',
+  });
+  t.equal(cow, expected);
+});

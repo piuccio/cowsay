@@ -1,25 +1,25 @@
-var getFace = require("../lib/faces");
+const test = require('tape');
+const getFace = require('../lib/faces');
 
-exports.getFace = function (test) {
-	test.expect(4);
+test('no mode', (t) => {
+  t.plan(2);
 
-	// Defaults
-	var face = getFace({
-		e : "oo",
-		T : "  "
-	});
-	test.equal(face.eyes, "oo");
-	test.equal(face.tongue, "  ");
+  const face = getFace({
+    e: 'oo',
+    T: '  ',
+  });
+  t.equal(face.eyes, 'oo');
+  t.equal(face.tongue, '  ');
+});
 
-	// One mode
-	var face = getFace({
-		g : true,
-		e : "oo",
-		T : "  "
-	});
-	test.equal(face.eyes, "$$");
-	test.equal(face.tongue, "  ");
+test('mode overrides provided values', (t) => {
+  t.plan(2);
 
-	// I don't really want to test two modes
-	test.done();
-}
+  const face = getFace({
+    g: true,
+    e: 'oo',
+    T: 'O ',
+  });
+  t.equal(face.eyes, '$$');
+  t.equal(face.tongue, '  ');
+});

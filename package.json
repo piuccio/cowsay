@@ -37,7 +37,7 @@
   },
   "scripts": {
     "prepare": "rollup -c",
-    "test": "node test.js"
+    "test": "tape test/**/*.js | tap-dot"
   },
   "dependencies": {
     "get-stdin": "^5.0.1",
@@ -46,11 +46,12 @@
     "strip-eof": "^1.0.0"
   },
   "devDependencies": {
-    "nodeunit": "~0.11.1",
-    "rollup": "2.26.5",
     "@rollup/plugin-commonjs": "15.0.0",
     "@rollup/plugin-node-resolve": "9.0.0",
-    "rollup-plugin-string": "3.0.0"
+    "rollup": "2.26.5",
+    "rollup-plugin-string": "3.0.0",
+    "tap-dot": "2.0.0",
+    "tape": "5.0.1"
   },
   "preferGlobal": true,
   "engines": {
