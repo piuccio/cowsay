@@ -48,6 +48,7 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "15.0.0",
     "@rollup/plugin-node-resolve": "9.0.0",
+    "execa": "4.0.3",
     "rollup": "2.26.5",
     "rollup-plugin-string": "3.0.0",
     "tap-dot": "2.0.0",
