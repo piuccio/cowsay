@@ -34,8 +34,8 @@ export interface IOptions {
     p?: boolean, // paranoia
     s?: boolean, // stoned
     t?: boolean, // tired
-    w?: boolean, // youthful
-    y?: boolean, // wired
+    w?: boolean, // wired
+    y?: boolean, // youthful
 }
 
 type callback_type = (error: NodeJS.ErrnoException, cow_names: string[]) => void;
@@ -81,8 +81,8 @@ export function list(callback: callback_type): Promise<string[]>;
  * - #### `p` : paranoia
  * - #### `s` : stoned
  * - #### `t` : tired
- * - #### `w` : youthful
- * - #### `y` : wired
+ * - #### `w` : wired
+ * - #### `y` : youthful
  * 
  * @example
  * ```

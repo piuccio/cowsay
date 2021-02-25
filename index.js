@@ -24,8 +24,8 @@ var faces = require("./lib/faces");
  * - #### `p` : paranoia
  * - #### `s` : stoned
  * - #### `t` : tired
- * - #### `w` : youthful
- * - #### `y` : wired
+ * - #### `w` : wired
+ * - #### `y` : youthful
  * 
  * @example
  * ```
@@ -79,8 +79,8 @@ exports.say = function (options) {
  * - #### `p` : paranoia
  * - #### `s` : stoned
  * - #### `t` : tired
- * - #### `w` : youthful
- * - #### `y` : wired
+ * - #### `w` : wired
+ * - #### `y` : youthful
  * 
  * @example
  * ```
