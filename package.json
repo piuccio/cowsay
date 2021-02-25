@@ -18,6 +18,7 @@
   },
   "license": "MIT",
   "main": "./index",
+  "types": "./index.d.ts",
   "module": "./build/cowsay.es.js",
   "browser": "./build/cowsay.umd.js",
   "bin": {
