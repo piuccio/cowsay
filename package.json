@@ -27,6 +27,7 @@
   },
   "files": [
     "index.js",
+    "index.d.ts",
     "cli.js",
     "build/",
     "cows/",
