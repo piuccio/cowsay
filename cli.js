@@ -60,7 +60,7 @@ if (argv.l) {
 } else {
   require('get-stdin')().then((data) => {
     if (data) {
-      argv._ = [require('strip-eof')(data)];
+      argv._ = [require('strip-final-newline')(data)];
       say();
     } else {
       yargs.showHelp();
