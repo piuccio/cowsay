@@ -1,6 +1,7 @@
 ##
 ## Stimpy!
 ##
+$eye = chop($eyes);
 $the_cow = <<EOC;
   $thoughts     .    _  .    
    $thoughts    |\\_|/__/|    

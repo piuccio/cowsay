@@ -1,6 +1,7 @@
 ##
 ## acsii picture from http://www.ascii-art.de/ascii/ab/bear.txt
 ##
+$eye = chop($eyes);
 $the_cow = <<EOC;
  $thoughts
   $thoughts

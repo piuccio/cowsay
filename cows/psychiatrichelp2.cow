@@ -1,4 +1,3 @@
-use utf8;
 $the_cow = <<EOC;
  $thoughts      .------------------------.
   $thoughts     |       PSYCHIATRIC      |
