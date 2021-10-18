@@ -42,7 +42,7 @@ If the program is invoked as cowthink then the cow will think its message instea
     W:
       'Specifies roughly where the message should be wrapped. The default is equivalent to -W 40 i.e. wrap words at or before the 40th column.',
     f:
-      "Specifies a cow picture file (''cowfile'') to use. It can be either a path to a cow file or the name of one of cows included in the package.",
+      "Specifies a cow picture file (''cowfile'') to use. It can be either a path to a cow file or an absolute url containing text to be used or the name of one of cows included in the package.",
     r: 'Select a random cow',
     l: 'List all cowfiles included in this package.',
     think: 'Think the message instead of saying it aloud.',
