@@ -1,0 +1,14 @@
+##
+## DoomCow, from adam.stopa@gmail.com
+## https://github.com/AdamStopa
+##
+$the_cow = <<EOC;
+        $thoughts     _---_
+         $thoughts   / ___ \\
+          $thoughts  :(// ):
+             \\ \\_/ /_____
+              \\_=_/      )\\/\\
+                ||-----w||
+                ||      ||
+
+EOC
