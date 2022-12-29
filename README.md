@@ -45,6 +45,9 @@ It acts in the same way as the original cowsay, so consult `cowsay(1)` or run `c
         "*$bd$$$$      '*$$$$$$$$$$$o+#"
              """"          """""""
 ````
+## Configuration
+
+If you have directory of own cows files, then you can include them to `cowsay` changing environment variable `COWSAY_DIR` (NOTE that in this case default cows files will be ignored, so suggest copy them to your directory).  String stored in variable `COWSAY_DIR` must be path to directory containing `.cows` files, you can receive a lot of `.cows` files, for example, in a cows files GitHub repository (for example this [repo](https://github.com/tnalpgge/rank-amateur-cowsay "GitHub repository containing defnition of cows"))
 
 ## Usage as a module
 
