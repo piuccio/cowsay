@@ -50,7 +50,7 @@ It acts in the same way as the original cowsay, so consult `cowsay(1)` or run `c
 
 cowsay can be used as any other npm dependency
 ```js
-var cowsay = require("cowsay");
+const cowsay = require("cowsay");
 
 console.log(cowsay.say({
     text : "I'm a moooodule",
