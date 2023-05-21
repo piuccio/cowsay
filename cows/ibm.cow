@@ -2,7 +2,7 @@
 # International Business Machines
 #
 
-$the_cow = << EOC;
+$the_cow = <<EOC;
   $thoughts
    $thoughts
 
