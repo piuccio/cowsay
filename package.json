@@ -1,6 +1,6 @@
 {
   "name": "cowsay",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "cowsay is a configurable talking cow",
   "keywords": [
     "cow",
@@ -39,7 +39,7 @@
   },
   "scripts": {
     "prepare": "rollup -c",
-    "test": "tape test/**/*.js | tap-dot"
+    "test": "tape test/**/*.js"
   },
   "dependencies": {
     "get-stdin": "8.0.0",
@@ -53,8 +53,7 @@
     "execa": "5.0.0",
     "rollup": "2.26.5",
     "rollup-plugin-string": "3.0.0",
-    "tap-dot": "2.0.0",
-    "tape": "5.0.1"
+    "tape": "5.7.4"
   },
   "preferGlobal": true,
   "engines": {
