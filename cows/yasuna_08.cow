@@ -2,7 +2,7 @@
 # ごぼう2
 #
 
-$the_cow << EOC;
+$the_cow = <<EOC;
   $thoughts
    $thoughts
     $thoughts

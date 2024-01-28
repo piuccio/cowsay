@@ -2,6 +2,7 @@
 #	Cat picture by Joan Stark
 #	Transformed into cowfile by Myroslav Golub
 #
+$eye = chop($eyes);
 $the_cow = <<EOC;
        $thoughts     *     ,MMM8&&&.            *
                   MMMM88&&&&&    .
@@ -11,7 +12,7 @@ $the_cow = <<EOC;
                  'MMM88&&&&&&'
           $thoughts        'MMM8&&&'      *
           |\\___/|
-         =) $eyeY$eye (=            .              '
+         =) ${eye}Y${eye} (=            .              '
           \\  ^  /
            )=*=(       *
           /     \\
