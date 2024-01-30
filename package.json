@@ -45,6 +45,7 @@
     "get-stdin": "8.0.0",
     "string-width": "~2.1.1",
     "strip-final-newline": "2.0.0",
+    "sync-request": "^6.1.0",
     "yargs": "15.4.1"
   },
   "devDependencies": {
