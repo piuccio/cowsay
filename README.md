@@ -71,6 +71,16 @@ console.log(cowsay.say({
                 ||     ||
 ````
 
+you can also use the shorthand version by passing text to the function
+
+```js
+const cowsay = require("cowsay");
+
+console.log(cowsay.say("I'm a moooodule"));
+
+// or cowsay.think()
+```
+
 getting a list of cow names:
 ```js
 function get_cows(error, cow_names) {

@@ -49,6 +49,9 @@ var faces = require("./lib/faces");
  *     text: 'Hello world!',
  *     y: true, // using y mode - youthful mode
  * })
+ *
+ * // shorthand
+ * cowsay.say("Hello world!")
  * ```
  * 
  * @returns {string} compiled cow
@@ -104,6 +107,9 @@ exports.say = function (options) {
  *     text: 'Hello world!',
  *     y: true, // using y mode - youthful mode
  * })
+ *
+ * // shorthand
+ * cowsay.think("Hello world!")
  * ```
  * 
  * @returns {string} compiled cow
@@ -133,6 +139,10 @@ exports.list = cows.list;
 
 function doIt (options, sayAloud) {
 	var cowFile;
+
+	if (typeof options === 'string') {
+		options = { text: options };
+	}
 
 	if (options.r) {
 		var cowsList = cows.listSync();
