@@ -143,7 +143,7 @@ import { think, SQUIRREL } from 'cowsay';
 
 console.log(think({
   text: 'grazing in the browser',
-  cow: SQUIRREL,
+  f: SQUIRREL, //To get cow name from cow folder instead of cow: cow name we should us f:cow name 
   eyes: 'pp',
   tongue: ';;',
 }));
