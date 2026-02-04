@@ -55,8 +55,7 @@
     "rollup-plugin-string": "3.0.0",
     "tape": "5.7.4"
   },
-  "preferGlobal": true,
   "engines": {
-    "node": ">= 4"
+    "node": ">= 6"
   }
 }

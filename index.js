@@ -1,6 +1,6 @@
-var balloon = require("./lib/balloon");
-var cows = require("./lib/cows");
-var faces = require("./lib/faces");
+const balloon = require("./lib/balloon");
+const cows = require("./lib/cows");
+const faces = require("./lib/faces");
 
 /**
  * @param options
@@ -19,7 +19,7 @@ var faces = require("./lib/faces");
  * ## Modes :
  * Modes are just ready-to-use faces, here's their list:
  * - #### `b` : borg
- * - #### `d` : dead      
+ * - #### `d` : dead
  * - #### `g` : greedy
  * - #### `p` : paranoia
  * - #### `s` : stoned
@@ -53,7 +53,7 @@ var faces = require("./lib/faces");
  * 
  * @returns {string} compiled cow
  */
-exports.say = function (options) {
+exports.say = function say (options) {
 	return doIt(options, true);
 };
 
@@ -74,7 +74,7 @@ exports.say = function (options) {
  * ## Modes :
  * Modes are just ready-to-use faces, here's their list:
  * - #### `b` : borg
- * - #### `d` : dead      
+ * - #### `d` : dead
  * - #### `g` : greedy
  * - #### `p` : paranoia
  * - #### `s` : stoned
@@ -108,7 +108,7 @@ exports.say = function (options) {
  * 
  * @returns {string} compiled cow
  */
-exports.think = function (options) {
+exports.think = function think (options) {
 	return doIt(options, false);
 };
 
@@ -130,21 +130,24 @@ exports.think = function (options) {
  * @returns {Promise} promise
  */
 exports.list = cows.list;
+exports.listSync = cows.listSync;
 
 function doIt (options, sayAloud) {
-	var cowFile;
+	let cowFile;
 
 	if (options.r) {
-		var cowsList = cows.listSync();
+		const cowsList = cows.listSync();
 		cowFile = cowsList[Math.floor(Math.random() * cowsList.length)];
 	} else {
 		cowFile = options.f || "default";
 	}
 
-	var cow = cows.get(cowFile);
-	var face = faces(options);
+	const cow = cows.get(cowFile);
+	const face = faces(options);
 	face.thoughts = sayAloud ? "\\" : "o";
 
-	var action = sayAloud ? "say" : "think";
-	return balloon[action](options.text || options._.join(" "), options.n ? null : options.W) + "\n" + cow(face);
+	const text = options.text || (options._ ? options._.join(" ") : "");
+	const wrap = options.n ? null : options.W;
+	const balloonText = sayAloud ? balloon.say(text, wrap) : balloon.think(text, wrap);
+	return balloonText + "\n" + cow(face);
 }

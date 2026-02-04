@@ -2,9 +2,9 @@
 const yargs = require('yargs')
 	.usage(`
 Usage: $0 [-e eye_string] [-f cowfile] [-h] [-l] [-n] [-T tongue_string] [-W column] [-bdgpstwy] text
-		
+
 If any command-line arguments are left over after all switches have been processed, they become the cow's message.
-		
+
 If the program is invoked as cowthink then the cow will think its message instead of saying it.
 `)
   .options({
@@ -69,15 +69,15 @@ if (argv.l) {
 }
 
 function say() {
-  const module = require('./index');
+  const cowsay = require('./index');
   const think = /think$/.test(argv['$0']) || argv.think;
 
-  console.log(think ? module.think(argv) : module.say(argv));
+  console.log(think ? cowsay.think(argv) : cowsay.say(argv));
 }
 
 function listCows() {
   require('./index').list((err, list) => {
-    if (err) throw new Error(err);
+    if (err) throw err;
     console.log(list.join('  '));
   });
 }

@@ -10,7 +10,7 @@
  * @property e : eyes
  * 
  * @Modes
- * @property b : borg 
+ * @property b : borg
  * @property d : dead
  * @property g : greedy
  * @property p : paranoia
@@ -20,15 +20,18 @@
  * @property y : youthful
  */
 export interface IOptions {
-    text: string,
+    text?: string,
     // cow
     f?: string, // cow name
     r?: boolean, // random mode
     // face
     e?: string, // eyes
     T?: string, // tongue
+    // wrapping
+    n?: boolean, // disable word-wrap
+    W?: number, // wrap column (default 40)
     // modes
-    b?: boolean, // borg 
+    b?: boolean, // borg
     d?: boolean, // dead
     g?: boolean, // greedy
     p?: boolean, // paranoia
@@ -36,16 +39,17 @@ export interface IOptions {
     t?: boolean, // tired
     w?: boolean, // wired
     y?: boolean, // youthful
+    _?: string[], // remaining arguments (used internally by CLI)
 }
 
-type callback_type = (error: NodeJS.ErrnoException, cow_names: string[]) => void;
+type callback_type = (error: NodeJS.ErrnoException | null, cow_names: string[]) => void;
 
 /**
  * @param callback
  * @returns a list of cow names from the cows folder without the .cow extension.
  * @example
  * ```
- * function get_cows(error: NodeJS.ErrnoException, cow_names: Array<string>): void {
+ * function get_cows(error: NodeJS.ErrnoException | null, cow_names: Array<string>): void {
  *    if (error) {
  *        console.log(`Error getting cow names: ${error.message}`);
  *    }
@@ -57,7 +61,12 @@ type callback_type = (error: NodeJS.ErrnoException, cow_names: string[]) => void
  * cowsay.list(get_cows);
  * ```
  */
-export function list(callback: callback_type): Promise<string[]>;
+export function list(callback?: callback_type): Promise<string[]>;
+
+/**
+ * @returns a list of cow names synchronously.
+ */
+export function listSync(): string[];
 
 /**
  * @param options
@@ -66,24 +75,24 @@ export function list(callback: callback_type): Promise<string[]>;
  * set your own defined eyes and tongue to `e` and `T`.
  * - ### `e` : eyes
  * - ### `T` : tongue
- * 
+ *
  * ## Cow :
  * Either specify a cow name (e.g. "fox") **_or_**
  * set the value of `r` to true which selects a random cow.
  * - ### `r` : random selection
  * - ### `f` : cow name - from `cows` folder
- * 
+ *
  * ## Modes :
  * Modes are just ready-to-use faces, here's their list:
  * - #### `b` : borg
- * - #### `d` : dead      
+ * - #### `d` : dead
  * - #### `g` : greedy
  * - #### `p` : paranoia
  * - #### `s` : stoned
  * - #### `t` : tired
  * - #### `w` : wired
  * - #### `y` : youthful
- * 
+ *
  * @example
  * ```
  * // custom cow and face
@@ -93,14 +102,14 @@ export function list(callback: callback_type): Promise<string[]>;
  *     T: 'U ', // tongue
  *     f: 'USA' // name of the cow from `cows` folder
  * })
- * 
+ *
  * // using a random cow
  * cowsay.say({
  *     text: 'Hello world!',
  *     e: 'xx', // eyes
  *     r: true, // random mode - use a random cow.
  * })
- * 
+ *
  * // using a mode
  * cowsay.say({
  *     text: 'Hello world!',
@@ -127,13 +136,13 @@ export function say(options: IOptions): string;
  * ## Modes :
  * Modes are just ready-to-use faces, here's their list:
  * - #### `b` : borg
- * - #### `d` : dead      
+ * - #### `d` : dead
  * - #### `g` : greedy
  * - #### `p` : paranoia
  * - #### `s` : stoned
  * - #### `t` : tired
- * - #### `w` : youthful
- * - #### `y` : wired
+ * - #### `w` : wired
+ * - #### `y` : youthful
  * 
  * @example
  * ```

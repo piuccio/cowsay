@@ -202,7 +202,7 @@ function convertToCliOptions(browserOptions) {
     n: browserOptions.wrap,
     W: browserOptions.wrapLength || 40,
     text: browserOptions.text || '',
-    _: browserOptions.text || [],
+    _: [],
     f: browserOptions.cow,
   };
   if (browserOptions.mode) {
@@ -214,11 +214,13 @@ function convertToCliOptions(browserOptions) {
 
 function doIt (options, sayAloud) {
   const cow = options.f || DEFAULT_COW;
-	const face = faces(options);
-	face.thoughts = sayAloud ? "\\" : "o";
+  const face = faces(options);
+  face.thoughts = sayAloud ? "\\" : "o";
 
-	const action = sayAloud ? "say" : "think";
-	return balloon[action](options.text || options._.join(" "), options.n ? null : options.W) + "\n" + replacer(cow, face);
+  const text = options.text || options._.join(" ");
+  const wrap = options.n ? null : options.W;
+  const balloonText = sayAloud ? balloon.say(text, wrap) : balloon.think(text, wrap);
+  return balloonText + "\n" + replacer(cow, face);
 }
 
 export function say(browserOptions) {
